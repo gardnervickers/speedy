@@ -16,9 +16,16 @@ byteorder = "1"
 
 [dev-dependencies]
 speedy-derive = { version = "0.3", path = "speedy-derive" }
+criterion = "0.2"
+[[bench]]
+name = "bench"
+harness = false
+
 
 [profile.release]
 panic = "abort"
 
 [workspace]
 members = [".", "speedy-derive"]
+
+
